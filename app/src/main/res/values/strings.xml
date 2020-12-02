@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Covidwatch</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">احمد محمود</string>
+    <string name="nav_header_subtitle">واد سمار , الجزائر</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!--Menu and appbar headers strings-->
+    <string name="maps">خرائط</string>
+    <string name="map_national">وطنية</string>
+    <string name="map_international">عالمية</string>
+    <string name="news">آخر الأحداث</string>
+    <string name="netnews">عبر الانترنت</string>
+    <string name="articles">مقالات</string>
+    <string name="videos">فيديوهات</string>
+    <string name="signal">التنبيه بحالة مشتبه فيها</string>
+    <string name="sante">صحتي</string>
+    <string name="myhealth">حالتي الصحية</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="settings">اعدادات</string>
+    <string name="about">حول التطبيق</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--facbook things -->
+    <string name="facebook_app_id">168907247873810</string>
+    <string name="fb_login_protocol_scheme">fb168907247873810</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

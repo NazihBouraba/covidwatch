@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view_article"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.articles.ArticleViewActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/article_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="سيب يبسي سيبسي سيبيس قثصصث ءؤر ءؤر صثقصث ق"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/article_content_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="سيب يبسي سيبسي سيبيس قثصصث ءؤر ءؤر صثقصث قسيب يبسي سيبسي سيبيس قثصصث ءؤر ءؤر صثقصث ق سيب يبسي سيبسي سيبيس قثصصث ءؤر ءؤر صثقصث ق"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article_title_tv" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/article_writer_image"
+            android:layout_width="59dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/article_content_tv"
+            app:layout_constraintTop_toBottomOf="@+id/article_content_tv" />
+        <!-- <ImageView
+        android:id="@+id/article_writer_image"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/article_content_tv"
+        app:layout_constraintTop_toBottomOf="@+id/article_content_tv"
+        tools:srcCompat="@android:mipmap/sym_def_app_icon" />-->
+
+        <TextView
+            android:id="@+id/article_writer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="سيبسي"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/article_writer_image"
+            app:layout_constraintTop_toTopOf="@+id/article_writer_image" />
+
+        <TextView
+            android:id="@+id/article_writer_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@email"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="@+id/article_writer_image"
+            app:layout_constraintEnd_toEndOf="@+id/article_writer_name" />
+
+        <TextView
+            android:id="@+id/article_timeago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="timeago"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="@+id/article_writer_mail"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/article_timeago"
+            app:layout_constraintTop_toTopOf="@+id/article_timeago"
+            app:srcCompat="@drawable/clock_icn_dark" />
+
+        <com.custom.sliderimage.logic.SliderImage
+            android:id="@+id/slider"
+            android:layout_width="667dp"
+            android:layout_height="229dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article_writer_image"
+            app:layout_constraintVertical_bias="0.415">
+
+        </com.custom.sliderimage.logic.SliderImage>
+
+        <EditText
+            android:id="@+id/article_comment_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="إضافة تعليق"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="304dp"
+            android:layout_marginEnd="48dp"
+            android:text="تعليقات"
+            android:textColor="@color/colorAccentDark"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article_writer_image" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/post_article_comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorAccentDark"
+            android:onClick="addComment"
+            android:text="إضافة"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/article_comment_edit"
+            app:layout_constraintTop_toBottomOf="@+id/article_comment_edit" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/article_comments_listview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_article_comment_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
